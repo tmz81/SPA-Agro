@@ -185,6 +185,11 @@ nav {
   width: 100%;
 }
 
+nav a img {
+  display: inline-block;
+  width: 2.3rem;
+}
+
 nav ul li {
   text-align: center;
 }
@@ -279,19 +284,20 @@ nav.show div.icon-close {
 }
 
 /*====  HOME ============================ */
-#home {
+#FEABE {
   overflow: hidden;
 }
 
-#home .container {
+#FEABE .container {
   margin: 0;
 }
 
-#home .image {
+#FEABE .image {
   position: relative;
+  align-items: center;
 }
 
-#home .image::before {
+#FEABE .image::before {
   content: '';
   height: 100%;
   width: 100%;
@@ -302,27 +308,31 @@ nav.show div.icon-close {
   z-index: 0;
 }
 
-#home .image img {
+#FEABE .image::after {
+  background: var(--base-color-alt);
+}
+
+#FEABE .image img {
   position: relative;
   right: 2.93rem;
 }
 
-#home .image img,
-#home .image::before {
+#FEABE .image img,
+#FEABE .image::before {
   border-radius: 0.25rem;
 }
 
-#home .text {
+#FEABE .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   text-align: center;
 }
 
-#home .text h1 {
+#FEABE .text h1 {
   margin-bottom: 1rem;
 }
 
-#home .text p {
+#FEABE .text p {
   margin-bottom: 2rem;
 }
 
@@ -365,25 +375,28 @@ nav.show div.icon-close {
 }
 
 /*====  SERVICES ============================ */
-.grid header h2.title {
-  font-size: 3px;
-}
 
 .cards.grid {
   gap: 1.5rem;
 }
 
 .card {
-  padding: 0.9rem 0.2rem 0.2rem 0.9rem;
+  padding: 0.9rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
 }
 
+.card:hover {
+  cursor: pointer;
+  transition: background 1ms;
+  background: var(--base-color);
+}
+
 .card img {
   display: block;
-  height: 50px;
+  height: 1.8rem;
   margin-bottom: 0.9rem;
   font-size: 5rem;
   color: var(--base-color);
@@ -616,17 +629,17 @@ footer .social a:hover {
   }
 
   /* home */
-  #home .container {
+  #FEABE .container {
     grid-auto-flow: column;
     justify-content: space-between;
     margin: 0 auto;
   }
 
-  #home .image {
+  #FEABE .image {
     order: 1;
   }
 
-  #home .text {
+  #FEABE .text {
     order: 0;
     max-width: 24rem;
     text-align: left;
