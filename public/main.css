@@ -284,20 +284,20 @@ nav.show div.icon-close {
 }
 
 /*====  HOME ============================ */
-#FEABE {
+#FEAB {
   overflow: hidden;
 }
 
-#FEABE .container {
+#FEAB .container {
   margin: 0;
 }
 
-#FEABE .image {
+#FEAB .image {
   position: relative;
   align-items: center;
 }
 
-#FEABE .image::before {
+#FEAB .image::before {
   content: '';
   height: 100%;
   width: 100%;
@@ -308,31 +308,31 @@ nav.show div.icon-close {
   z-index: 0;
 }
 
-#FEABE .image::after {
+#FEAB .image::after {
   background: var(--base-color-alt);
 }
 
-#FEABE .image img {
+#FEAB .image img {
   position: relative;
   right: 2.93rem;
 }
 
-#FEABE .image img,
-#FEABE .image::before {
+#FEAB .image img,
+#FEAB .image::before {
   border-radius: 0.25rem;
 }
 
-#FEABE .text {
+#FEAB .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   text-align: center;
 }
 
-#FEABE .text h1 {
+#FEAB .text h1 {
   margin-bottom: 1rem;
 }
 
-#FEABE .text p {
+#FEAB .text p {
   margin-bottom: 2rem;
 }
 
@@ -381,7 +381,7 @@ nav.show div.icon-close {
 }
 
 .card {
-  padding: 0.9rem;
+  padding: 3.625rem 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
@@ -629,17 +629,17 @@ footer .social a:hover {
   }
 
   /* home */
-  #FEABE .container {
+  #FEAB .container {
     grid-auto-flow: column;
     justify-content: space-between;
     margin: 0 auto;
   }
 
-  #FEABE .image {
+  #FEAB .image {
     order: 1;
   }
 
-  #FEABE .text {
+  #FEAB .text {
     order: 0;
     max-width: 24rem;
     text-align: left;
