@@ -37,29 +37,27 @@ img {
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
 
-  --title-font: 'Poppins', sans-serif;
-  --body-font: 'DM Sans', sans-serif;
-
-
+  --title-font: "Poppins", sans-serif;
+  --body-font: "DM Sans", sans-serif;
 
   --dark-blue: #363f5f;
-  --green: #49AA26;
+  --green: #49aa26;
   --light-green: #3dd705;
   --red: #e92929;
-  --linear: #5498FF;
-  --black: #0D114F;
-  --white: #FAFAFA;
-  --red: #E83F5B;
-  --light-blue: #E0ECFF;
-  --blue: #3485FF;
-  --bg: #FBFCFF;
+  --linear: #5498ff;
+  --black: #0d114f;
+  --white: #fafafa;
+  --red: #e83f5b;
+  --light-blue: #e0ecff;
+  --blue: #3485ff;
+  --bg: #fbfcff;
   --overlay: #040911;
-  --icons-details: #A5B0C1;
-  --grey-dark: #4D5E77;
-  --grey-blue: #A1B2CD;
-  --grey-light: #E5EAF1;
-  --grey-hover: #8794A7;
-  --grey-medium: #EAECF2;
+  --icons-details: #a5b0c1;
+  --grey-dark: #4d5e77;
+  --grey-blue: #a1b2cd;
+  --grey-light: #e5eaf1;
+  --grey-hover: #8794a7;
+  --grey-medium: #eaecf2;
 }
 
 /*===  BASE ============================ */
@@ -205,7 +203,7 @@ nav ul li a.active {
 }
 
 nav ul li a::after {
-  content: '';
+  content: "";
   width: 0%;
   height: 2px;
   background: var(--base-color);
@@ -298,7 +296,7 @@ nav.show div.icon-close {
 }
 
 #FEAB .image::before {
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   background: var(--base-color-second);
@@ -350,7 +348,7 @@ nav.show div.icon-close {
 }
 
 #about .image::before {
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   background: var(--base-color-second);
@@ -375,7 +373,6 @@ nav.show div.icon-close {
 }
 
 /*====  SERVICES ============================ */
-
 .cards.grid {
   gap: 1.5rem;
 }
@@ -384,7 +381,7 @@ nav.show div.icon-close {
   padding: 3.625rem 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
-  border-radius: 0.25rem 0.25rem 0 0;
+  /* border-radius: 0.25rem 0.25rem 0 0; */
   text-align: center;
 }
 
@@ -406,7 +403,6 @@ nav.show div.icon-close {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
-
 
 /* 
 /*====  TESTIMONIALS ============================ 
@@ -527,6 +523,10 @@ footer .brand p {
 footer i {
   font-size: 1.5rem;
   color: var(--text-color-light);
+}
+
+footer i.icon-instagram, i.icon-facebook {
+  font-size: 2.8rem;
 }
 
 footer .social {
@@ -701,3 +701,7 @@ footer .social a:hover {
   }
 }
 /* medium devices: 767 > */
+
+.bg-home {
+  width: 2rem;
+}
