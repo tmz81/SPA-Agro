@@ -25,8 +25,10 @@ img {
   /* colors */
   --hue: 159;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  /* --base-color: hsl(var(--hue) 36% 57%); */
+  --base-color: #1B2D4F;
+  /* --base-color-second: hsl(var(--hue) 65% 88%); */
+  --base-color-second: #F5C33B;
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
@@ -36,7 +38,6 @@ img {
   /* fonts */
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
-
   --title-font: "Poppins", sans-serif;
   --body-font: "DM Sans", sans-serif;
 
@@ -60,6 +61,17 @@ img {
   --grey-medium: #eaecf2;
 }
 
+#about h2 {
+  color: #fff;
+}
+
+#about p {
+  color: #fff;
+}
+
+.card h3.title:hover {
+  color: var(--white);
+}
 /*===  BASE ============================ */
 html {
   scroll-behavior: smooth;
@@ -96,11 +108,7 @@ body {
 
 .divider-1 {
   height: 1px;
-  background: linear-gradient(
-    270deg,
-    hsla(var(--hue), 36%, 57%, 1),
-    hsla(var(--hue), 65%, 88%, 0.34)
-  );
+  background: var(--base-color-second);
 }
 
 .divider-2 {
@@ -152,7 +160,7 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: var(--body-color);
+  background-color: var(--base-color-second);
   width: 100%;
 }
 
@@ -336,7 +344,7 @@ nav.show div.icon-close {
 
 /*====  ABOUT ============================ */
 #about {
-  background: var(--body-color);
+  background: #1B2D4F;;
 }
 
 #about .container {
@@ -389,6 +397,7 @@ nav.show div.icon-close {
   cursor: pointer;
   transition: background 1ms;
   background: var(--base-color);
+  color: var(--white);
 }
 
 .card img {
@@ -399,9 +408,18 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
+.card:hover .svg {
+  color: var(--base-color-second);
+}
+
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+  color: var(--base-color);
+}
+
+.card:hover .title {
+  color: var(--white);
 }
 
 /* 
@@ -545,8 +563,8 @@ footer .social a:hover {
 
 /* Back to top */
 .back-to-top {
-  background: var(--base-color);
-  color: var(--text-color-light);
+  background: var(--base-color-second);
+  color: var(--base-color);
 
   position: fixed;
   right: 1rem;
@@ -701,7 +719,5 @@ footer .social a:hover {
   }
 }
 /* medium devices: 767 > */
+/* 
 
-.bg-home {
-  width: 2rem;
-}
